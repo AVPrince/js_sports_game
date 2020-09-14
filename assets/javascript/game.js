@@ -28,7 +28,7 @@ teamOne.addEventListener('click', function(){
 
 teamTwo.addEventListener('click', function(){
     // console.log("Team Two Scores")
-    let countValue = Math.floor(Math.random()*2) + Number(goal1.innerHTML)
+    let countValue = Math.floor(Math.random()*2) + Number(goal2.innerHTML)
     goal2.innerHTML=countValue
 })
 
