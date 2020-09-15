@@ -8,7 +8,7 @@ const shoot2 = document.querySelector('#teamtwo-numshots')
 const goal1 = document.querySelector('#teamone-numgoals')
 const goal2 = document.querySelector('#teamtwo-numgoals')
 
-teamOne.addEventListener('click', function(){
+teamOne.addEventListener('click', function (){
     console.log("Team One button clicked")
     let countValue = Number(shoot1.innerHTML) +1
     shoot1.innerHTML = countValue
@@ -32,3 +32,14 @@ resetButton.addEventListener('click', function(){
     shoot1.innerHTML = '0'
     shoot2.innerHTML = '0'
 })
+
+var bleep = new Audio();
+bleep.src="./assets/bleep.wav";
+function loadContent(num){
+    bleep.play(); // Play shoot button sound now
+}
+var reset = new Audio();
+reset.src="./assets/reset.wav";
+function playBtnSound(num){
+    reset.play(); // Play reset button sound now
+}
